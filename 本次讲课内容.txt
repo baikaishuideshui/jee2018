@@ -1,0 +1,38 @@
+<s:radio name="type" 
+list="{'forward','redirect'}"
+       value="'forward'"/>
+	   
+<constant name="struts.custom.i18n.resources"
+value="global"/>
+src根目录下有global为基本名的资源文件
+<s:textfield name="" key=""/>
+如果文本框的名字和key的名字一样
+<s:textfield key=""/>
+
+资源文件加载顺序
+先用action的资源，然后用全局资源
+指定语言_指定地区
+指定语言
+
+用户名是{0},java是{1} ${pass}，密码的长度是${pass.length()}
+
+${getText("username")}为空.zh_CN
+
+<s:select list="locs" listKey="" 
+listValue="" value=""/>
+listValue指定显示的值
+listKey提交给action的值
+<s:select list="locs" listKey="" 
+    listValue="displayName"/>
+	
+<s:select list="locsMap" listKey="key" 
+    listValue="value"/>
+	Map.Entry
+	
+	The namespace attribute subdivides 
+	action configurations into logical 
+	modules, each with its own 
+	identifying prefix. 
+	Namespaces avoid conflicts	
+	between action names.
+	
